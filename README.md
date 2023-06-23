@@ -13,7 +13,6 @@ allprojects {
 }
 // 添加以下代码到app模块的build.gradle
 dependencies {
-    def latest_version = '1.0'
-    implementation 'com.github.dora4:dcache-greendao-support:$latest_version'
+    implementation 'com.github.dora4:dcache-greendao-support:1.1'
 }
 ```

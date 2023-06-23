@@ -32,13 +32,12 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.7.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
 
-    implementation("com.github.dora4:dcache-android:1.6.26")
+    implementation("com.github.dora4:dcache-android:1.7.6")
     val greendao_version = "3.3.0"
-    implementation("org.greenrobot:greendao:$greendao_version")
-    implementation("org.greenrobot:greendao-generator:$greendao_version")
+    api("org.greenrobot:greendao:$greendao_version")
+    api("org.greenrobot:greendao-generator:$greendao_version")
 }
 
 afterEvaluate {
@@ -48,7 +47,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = "dcache-greendao-support"
-                version = "1.0"
+                version = "1.1"
             }
         }
     }
