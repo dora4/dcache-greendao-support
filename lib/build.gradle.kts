@@ -34,7 +34,7 @@ android {
 dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
 
-    implementation("com.github.dora4:dcache-android:1.7.6")
+    implementation("com.github.dora4:dcache-android:1.8.5")
     val greendao_version = "3.3.0"
     api("org.greenrobot:greendao:$greendao_version")
     api("org.greenrobot:greendao-generator:$greendao_version")
@@ -47,7 +47,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = "dcache-greendao-support"
-                version = "1.1"
+                version = "1.2"
             }
         }
     }

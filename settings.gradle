@@ -14,6 +14,10 @@ pluginManagement {
             if (requested.id.namespace == "org.greenrobot") {
                 useModule("org.greenrobot:greendao-gradle-plugin:3.3.0")
             }
+            if (requested.id.namespace == "org.jetbrains.kotlin") {
+                def kotlin_version = "1.8.10"
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+            }
         }
     }
 }
