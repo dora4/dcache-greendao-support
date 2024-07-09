@@ -14,7 +14,7 @@ allprojects {
 // 添加以下代码到app模块的build.gradle
 dependencies {
     // 扩展包需要在有主框架的情况下使用
-    implementation 'com.github.dora4:dcache-android:2.3.6'
+    implementation 'com.github.dora4:dcache-android:2.3.13'
     implementation 'com.github.dora4:dcache-greendao-support:1.2'
 }
 ```
